@@ -1,0 +1,6 @@
+def hurdleRace(k, height):
+    m = max(height)
+    if k < m:
+        return(m-k)
+    else:
+        return(0)
