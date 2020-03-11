@@ -4,12 +4,12 @@ def beautifulDays(i, j, k):
     ans = 0
     
     
-    for n in (i , j+1):
+    for n in range(i , j+1):
         while n > 0 :
             remndr = rev % 10
             rev = (rev*10)+remndr
             n = n //10
-        revarr.append(rev)
+    revarr.append(rev)
         
 
 
