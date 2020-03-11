@@ -1,0 +1,19 @@
+def beautifulDays(i, j, k):
+    rev = 0
+    revarr= [] 
+    ans = 0
+    
+    
+    for n in (i , j+1):
+        while n > 0 :
+            remndr = rev % 10
+            rev = (rev*10)+remndr
+            n = n //10
+        revarr.append(rev)
+        
+
+
+
+       
+    return(revarr)
+    
