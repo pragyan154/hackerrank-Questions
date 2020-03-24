@@ -1,0 +1,30 @@
+def appendAndDelete(s, t, k):
+    newS = list(str(s))
+    newT = list(str(t))
+    if newT == newS :
+        return("Yes")
+    
+    if len(newS) > len(newT):
+        minimum = len(newT)
+        remain = len(newS)-len(newT)
+
+    else:
+        minimum = len(newS)
+        remain = len(newT)-len(newS)
+    ans = 0
+    i = 0
+    while newS[i] == newT[i]:
+        ans += 1
+        print(ans)
+        if ans == minimum:
+            break
+        i+=1
+        
+    
+    answer= 0
+    answer = 2*(minimum -ans)+ remain
+    if minimum == ans and 
+    elif answer <= k :
+        return("Yes")
+    else:
+        return("No")
