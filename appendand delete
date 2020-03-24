@@ -22,9 +22,11 @@ def appendAndDelete(s, t, k):
         
     
     answer= 0
-    answer = 2*(minimum -ans)+ remain
-    if minimum == ans and 
-    elif answer <= k :
+    if (len(newS)+len(newT)-2*ans)>k:
+        return("No")
+    elif (len(newS)+len(newT)-2*ans)%2 == k%2:
+        return("Yes")
+    elif len(newS)+len(newT) < k:
         return("Yes")
     else:
         return("No")
