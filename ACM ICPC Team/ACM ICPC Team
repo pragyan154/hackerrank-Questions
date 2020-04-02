@@ -1,0 +1,29 @@
+def acmTeam(topic):
+    count=0
+    maxx=0
+    ans=[]
+    answer = []
+    result = []
+    for i in range(len(topic)-1):
+        s1=topic[i]
+        
+        for j in range(i+1,len(topic)):
+            s2=topic[j]
+            
+            for (x,y) in zip(s1,s2):
+                if(x=='1' or y=='1'):
+                    maxx += 1
+            ans.append(maxx)
+    
+    answer.append(ans[0])
+    for k in range(0 , len(ans)-1):
+        
+        answer.append(ans[k+1] - ans[k]) 
+
+    m = max(answer)
+    result.append(m)
+
+    c = answer.count(m)
+    result.append(c)
+
+    return result
